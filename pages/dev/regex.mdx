@@ -32,17 +32,22 @@ Returns a Boolean value that indicates whether or not a pattern exists in a sear
 let sentence = "The dog chased a cat"
 let regex = /cat/
 
+```
 console.log(regex.test(sentence)) // true
+```
 
 ## the match method
 Matches a string or an object that supports being matched against, and returns an array containing the results of that search, or null if no matches are found.
 
+```
 (method) String.match(matcher: {
     [Symbol.match](string: string): RegExpMatchArray;
 }): RegExpMatchArray (+1 overload)
+```
 
 @param matcher — An object that supports being matched against.
 
+```
 let sentence = "The dog jumped over the fence."
 let regex = /dog/i
 
@@ -53,32 +58,39 @@ console.log(sentence.match(regex))
 //  input: 'The dog jumped over the fence.',
 //  groups: undefined
 // ]
+```
 
 ## or
 Written as pipe |
 
+```
 let sentence = "The dog chased a cat"
 let regex = /cat|bird/
 
 console.log(regex.test(sentence)) // true
+```
 
 ## flags
 
 ### global search
 Denoted by g
 
+```
 let sentence = "twinkle, twinkle little star"
 let regex = /twinkle/g
 
 console.log(sentence.match(regex)) // [ 'twinkle', 'twinkle' ]
+```
 
 ### case insensitive
 Denoted by i
 
+```
 let sentence = "freeCodeCamp"
 let regex = /freecodecamp/i
 
 console.log(regex.test(sentence)) // true
+```
 
 ## Wildcards
 
