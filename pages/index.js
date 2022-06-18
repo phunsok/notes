@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <Image src={heroImage} className="bg-red-500 bg-blend-multiply" />
+      <Image src={heroImage} className="bg-red-500 bg-blend-multiply" alt="" />
       {posts.map(post => (
         <Link href={post.path} key={post.path}>
           <a>
