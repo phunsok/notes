@@ -1,0 +1,136 @@
+import Layout from 'components/layout'
+import Breadcrumb from 'components/breadcrumb'
+import Head from 'next/head'
+import Image from 'next/image'
+import profileImage from 'public/images/skeleton.jpeg'
+
+export const chapter_no = 1
+export const title = "Skeletal System"
+export const hours = 5
+export const status = "complete"
+export const syllabus = "Skeleton: Definition, Basic functions, Types, Classification, Gross and microscopic anatomy, Joints: Definition, Types and function, Muscles: Definition, Functions, Gross and microscopic anatomy"
+export const image = profileImage
+
+<Head>
+    <title>{title}</title>
+</Head>
+
+<Breadcrumb />
+
+<Image src={profileImage} className="rounded-lg" />
+
+<div>
+
+# Skeletal System
+
+- **osteology** - study of bones
+- **arthrology** - study of joints
+- **kinesiology** -  study of musculoskeletal movement
+- composed of **bones**, **cartilages** and **ligaments** joined tightly to form a strong, flexible, framework
+- **cartilage** - precursor of bones in embryonic development
+- **ligament** - collagenous bands that hold bones together at joints
+- **tendon** - attach muscle to bone, structurally similar to ligaments
+
+## Functions
+
+- **support** - support the viscera and muscles; maxilla and mandible support teeth
+- **protection** - protect the brain, spinal cord, lungs, heart, pelvic viscera
+- **movement** - provide attachment and leverage for muscular system; allow limb movement, ventilate lungs
+- **blood formation** - red bone marrow
+- **storage** - reservoir of Ca, P and other minerals; fatty bone marrow serves as reserves of stored fuel
+
+## Bone Tissue
+
+- hard, calcified tissue of bone - **osseous tissue**
+- **two** forms:
+    - **compact** (dense) bone
+        - solidly filled w/ opaque matrix
+        - outer shell surrounding spongy bone
+        - prevents bone marrow from seeping out and provides sollid attachment surfaces for muscles, tendons and ligaments
+        - at surface, arranged into parallel layers laid down by surface osteoblasts
+        - deeper, organized into cylindrical units - **osteons** (layers - **lamellae** around a central canal); central canal has small blood vessels and nerves; innermost osteocytes receive nutrients from bloodstream and pass them along to remote osteocytes; wates travel in the opposite direction
+    - **spongy** bone
+        - porous lattice of **trabeculae** (slender rods and plates) honeycombed w/ spaces filled w/ bone marrow and small blood vessels
+        - impart strength w/o adding too much weight
+- consists of cells and matrix
+
+### 1. Bone Cells
+
+1. **Osteogenic cells**
+    - occur on bone surface beneath the fibrous connective tissue membrane that covers the bone
+    - stem cells
+    - give rise to osteoblasts
+    - only bone cells capable of dividing and making more bone cells
+2. **Osteoblasts**
+    - develop from osteogenic cells
+    - single layer on bone surface, resembling cuboidal epithelium
+    - synthesizes organic matter of bone and deposit matrix
+    - numerous mitochondria and RER
+3. **Osteocytes**
+    - mature bone cells
+    - osteoblasts that have become trapped in the matrix they deposited
+    - reside in cavities- **lacunnae**, which are connected to each other by slender channels- **canaliculi**
+    - have delicate cytoplasmic membranes that reach into the canaliculi to meet those of neighbouring osteocytes
+    - pass nutrients, wastes, and chemical signals to each other through gaps junctions at tips of cytoplasmic processes
+4. **Osteoclasts**
+    - bone-dissolving cells
+    - develop from separate line of bone marrow stem cells
+    - very large (upto 150μm diameter)
+    - multiple nuclei
+    - lie on bone surface like osteoblasts
+    - often in pits that have eroded into the bone surface
+    - unusual comb-like infoldings of the plasma membrane - **ruffled border**
+    - cells secrete HCl and enzymes to dissolve osseous tissue from ruffled border
+
+### 2. Bone Matrix
+
+- stony matter that surrounds osteocytes and lacunae
+- 1/3 organic matter (mainly collagen)
+- 2/3 inorganic (mainly Ca(PO₄)₂)
+- composite material - provide flexibility and strength
+- minerals resist compression; childhood **rickets** and adult **osteomalacia** - mineral deficiency
+- collagen resist tension
+
+## Bone
+
+### 1. Long bones
+
+- in limbs, for leverage and movement
+- the elongated midsection is the **diaphysis/shaft** and each expanded end is the **epiphysis/head**
+- diaphysis privides leverage; epiphysis provides added surface area for attaching tendons and ligament
+- head and nearby shaft has spongy bone
+- bone marrow is in **medullary cavity** of shaft and spaces in spongy bone
+- **epiphysial lines** mark former growth zones of child’s bone
+- ends where two bones meet are covered w/ hyaline cartilage called **articular cartilage**, eases joint movements
+
+### 2. Flat bones
+
+- for protection e.g. sternum, cranial bones
+- for attachment e.g. scapula, hip bones
+- two layer of compact bones enclose a spongy bone
+
+### 3. Irregular
+
+- e.g. wrist bones, vertebrae
+
+### Periosteum and Endosteum
+
+- **periosteum** - fibrous sheath covering bone
+    - collagen fibres penetrate into bone itself and are continuous with tendons; provide strong attachment and continuity from muscle to tendon to bone
+    - not present over articular cartilage
+- **endosteum** - lines internal surface
+    - thin layer of reticular connective tissue separating bone from bone marrow
+
+### Bone marrow
+
+- **Red bone marrow**
+    - contains stem cells that produce red blood cells and platelets
+    - fills nearly every bone of child’s skeleton, limited in adults
+    - consists of soft, structured network of delicate blood vessels surronded by reticular tissues and islands of blood-forming cells
+- **Yellow bone marrow**
+    - contains stem cells that produce cartilage, fats and bone
+    - much of red bone marrow is replaced by yellow bone marrow as we mature and dominates long limb bone cells
+
+</div>
+
+export default ({children}) => <Layout>{children}</Layout>

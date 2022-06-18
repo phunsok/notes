@@ -1,0 +1,52 @@
+import Layout from 'components/layout'
+import Breadcrumb from 'components/breadcrumb'
+import Head from 'next/head'
+import Image from 'next/image'
+import profileImage from 'public/images/muscles.jpg'
+
+export const chapter_no = 1
+export const title = "Muscular System"
+export const hours = 5
+export const status = "progress"
+export const syllabus = "Skeleton: Definition, Basic functions, Types, Classification, Gross and microscopic anatomy, Joints: Definition, Types and function, Muscles: Definition, Functions, Gross and microscopic anatomy"
+export const image = profileImage
+
+<Head>
+    <title>{title}</title>
+</Head>
+
+<Breadcrumb />
+
+<Image src={profileImage} className="rounded-lg" />
+
+<div>
+
+# {title}
+
+## Functions
+
+- **movement** - support the viscera and muscles; maxilla and mandible support teeth
+- **stability** - protect the brain, spinal cord, lungs, heart, pelvic viscera
+- **control of body openings and passages** - provide attachment and leverage for muscular system; allow limb movement, ventilate lungs
+- **heat generation** - produce 30% of body heat at rest and upto 40x as much during exercise
+- **glycemic control** - muscles absorb large share of blood glucose, perform glucose-buffering function
+
+## Skeletal muscle
+
+- **voluntary**, **striated**(alternating light and dark transverse bands- **striations**) muscle
+- reflect overlapping arrangement of internal proteins that enable it to contract
+- usually attached to one or more bones
+- cells are internally complex and tightly arranged
+- **skeletal muscle fibre
+    - long slender shapes- **fibres**
+    - typically ~100µm thick, 3cm long
+    - can be 500µm thick, 30cm long
+    - multiple nuclei pressed against inner plasma membrane
+    - **myofibrils**
+        - thick bundle of contractile protein
+        - several dozen to few thousands
+    - numerous mitochondria packed between myofibrils
+
+</div>
+
+export default ({children}) => <Layout>{children}</Layout>
