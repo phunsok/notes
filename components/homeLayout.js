@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-const homeLayout = ({ children }) => {
+const HomeLayout = ({ children }) => {
 
   useEffect(() => {
     const ads = document.getElementsByClassName("adsbygoogle").length;
@@ -44,4 +44,4 @@ const homeLayout = ({ children }) => {
   )
 }
 
-export default homeLayout
+export default HomeLayout

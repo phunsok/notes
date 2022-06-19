@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <HomeLayout>
       {subjects.map(subject => (
-        <div className="mb-8">
+        <div className="mb-8" key={subject.id}>
           <h1 className="text-lg mb-4">{subject.title}</h1>
           {posts
             .filter(post => post.subjectCode === subject.id)
