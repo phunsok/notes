@@ -9,8 +9,9 @@ const Breadcrumb = ({ props }) => {
             <Link href="/">
               <a className="text-slate- 700 dark:text-slate-100 no-underline hover:underline ">Home</a>
             </Link>
-          </li>/
-          <li className="m-0 p-0">
+          </li>
+          /
+          {/* <li className="m-0 p-0">
             <Link href="#">
               <a className="text-slate- 700 dark:text-slate-100 no-underline hover:underline ">Human Anatomy and Physiology</a>
             </Link>
@@ -22,7 +23,7 @@ const Breadcrumb = ({ props }) => {
           </li>/
           <li className="m-0 p-0">
             <span className="text-slate- 700 dark:text-slate-200 no-underline font-bold">Skeletal System</span>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

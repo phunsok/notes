@@ -1,0 +1,41 @@
+import Layout from 'components/layout'
+import Breadcrumb from 'components/breadcrumb'
+import Head from 'next/head'
+import Image from 'next/image'
+import profileImage from 'public/images/haemophilus.jpeg'
+
+export const chapter_no = 1
+export const title = "Haemophilus"
+export const hours = 5
+export const status = "complete"
+export const syllabus = "Classification, structure, physiology, pathogenesis, medical importance and control of bacteria:  Escherichia coli, Salmonella, Shigella, Campylobacter, Vibrio, Haemophilus, Klebsiella,  Corynebacterium, Staphylococcus, Streptococcus, Clostridium, Neisseria, Treponema,  Chlamydia, Mycoplasma, Mycobacterium, Bacillus "
+export const image = profileImage
+
+<Head>
+    <meta name="description" content="Classification, structure, physiology, pathogenesis, medical importance and control of Haemophilus" />
+    <title>{title}</title>
+</Head>
+
+<Breadcrumb />
+
+<Image src={profileImage} className="rounded-lg" alt="" />
+
+<div>
+
+# Haemophilus
+
+- small, Gram-negative, pleomorphic bacteria
+- require enriched media containing blood or derivatives
+- most are normal flora of mucous membranes; occassionally causes disease
+- *Haemophilus influenzae* type b - important human pathogen
+- *Haemophilus ducreyi* causes chancroid, an STD
+
+## Typical organisms
+
+
+## Morphology
+
+
+</div>
+
+export default ({children}) => <Layout>{children}</Layout>

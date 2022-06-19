@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 
-const Layout = ({ children }) => {
+const homeLayout = ({ children }) => {
 
   useEffect(() => {
     const ads = document.getElementsByClassName("adsbygoogle").length;
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
         </div>
       </header>
       <main className="flex-grow">
-        <div className="mx-auto max-w-4xl px-4 py-24 prose dark:prose-invert flex flex-col gap-8">
+        <div className="mx-auto max-w-4xl px-4 py-24 prose dark:prose-invert flex flex-col">
           {children}
         </div>
       </main>
@@ -44,4 +44,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default homeLayout
