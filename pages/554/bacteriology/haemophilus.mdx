@@ -16,9 +16,12 @@ export const image = profileImage
     <title>{title}</title>
 </Head>
 
-<Breadcrumb />
+<Breadcrumb title={title} />
 
-<Image src={profileImage} className="rounded-lg" alt="" />
+<div>
+    <Image src={profileImage} className="rounded-lg" alt="" />
+    <p className="text-xs opacity-50 text-right">Photo by <a target="_blank" href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a target="_blank" href="https://unsplash.com/s/photos/bacteria?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+</div>
 
 <div>
 
@@ -47,10 +50,12 @@ export const image = profileImage
 
 <table>
     <thead>
-        <th>Species</th>
-        <th>Requires X</th>
-        <th>Requires V</th>
-        <th>Haemolysis</th>
+        <tr>
+            <th>Species</th>
+            <th>Requires X</th>
+            <th>Requires V</th>
+            <th>Haemolysis</th>
+        </tr>
     </thead>
     <tbody>
         <tr>

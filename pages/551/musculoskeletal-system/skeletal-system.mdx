@@ -16,13 +16,16 @@ export const image = profileImage
     <title>{title}</title>
 </Head>
 
-<Breadcrumb />
+<Breadcrumb title={title} />
 
-<Image src={profileImage} className="rounded-lg" alt="" />
+<div>
+    <Image src={profileImage} className="rounded-lg" alt="" />
+    <p className="text-xs opacity-50 text-right">Photo by <a target="_blank" href="https://unsplash.com/@cadop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathew Schwartz</a> on <a target="_blank" href="https://unsplash.com/s/photos/skeleton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+</div>
 
 <div>
 
-# Skeletal System
+# {title}
 
 - **osteology** - study of bones
 - **arthrology** - study of joints

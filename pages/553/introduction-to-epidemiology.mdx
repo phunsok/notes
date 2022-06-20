@@ -1,0 +1,179 @@
+import Layout from 'components/layout'
+import Breadcrumb from 'components/breadcrumb'
+import Head from 'next/head'
+import Image from 'next/image'
+import profileImage from 'public/images/epidemiology.jpeg'
+
+export const chapter_no = 1
+export const title = "Introduction to Epidemiology"
+export const hours = 5
+export const status = "complete"
+export const syllabus = "Skeleton: Definition, Basic functions, Types, Classification, Gross and microscopic anatomy, Joints: Definition, Types and function, Muscles: Definition, Functions, Gross and microscopic anatomy"
+export const image = profileImage
+
+<Head>
+    <meta name="description" content="functions, types, classification, gross and microscopic anatomy of bones; types and functions of joints" />
+    <title>{title}</title>
+</Head>
+
+<Breadcrumb title={title} />
+
+<div>
+    <Image src={profileImage} className="rounded-lg" alt="" />
+    <p className="text-xs opacity-50 text-right">Photo by <a target="_blank" href="https://unsplash.com/@joshuafernandez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Fernandez</a> on <a target="_blank" href="https://unsplash.com/s/photos/mask-people?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+</div>
+
+<div>
+
+# {title}
+
+- Greek **epi** - on, upon, to; **demos** - people; **logos** - knowledge, doctrine, science
+- the study of the occurance, distribution, determinants of health problems and diseases in human populations and use of this knowledge for the prevention and control of disease
+
+## Historical Definitions
+- **Frost**, 1927 - the science of the mass phenomena of infectious diseases or the natural history of infectious diseases
+- **Stally Brass**, 1931 - the science of infective diseases, their prime causes, propagation and prevention
+- **Greenwood**, 1935 - the study of disease, any disease as a mass phenomenon
+- **Lumsden**, 1936 - The study of condition known or reasonably supposed to influence the prevalence of disease
+
+## Modern Definition
+
+- **JM Last**, 1988 - Study of the distribution and determinants of health-related states or events in the specified populations and the application of this study to control of health problems
+
+## Types
+1. Geographic epidemiology
+1. Clinical epidemiology
+1. Identification of agents of disease
+1. Statistical epidemiology
+1. Descriptive epidemiology and field surveyy
+1. Analytical epidemiology
+1. Experimental epidemiology
+1. Infectious disease epidemiology
+1. Administrative prevention, control and treatment of disease
+
+## Aims of Epidemiology
+1. to describe and analyze disease occurrence and distribution in human populations
+1. to identify aetiological factors (risk factors) in the pathogenesis of disease
+1. to provide the data essential for the planning, implementation and evaluation of services for the prevention, control and treatment of diseases and to the setting up of priorities among those services
+
+### Ultimate aim
+1. To eliminate or reduce the health problems or its consequences
+1. To promote the health and well-being of a society as a whole
+
+## Uses
+1. In earlier days
+    - limited to find out the causes of communicable diseases
+1. Nowadays
+    - to study the influence of genetic and environmental factors in human disease and preventive intervention through health promotion
+
+### Specific Uses
+1. Investigation of causation of disease
+1. Study of natural history and prognosis of the disease
+1. Description of health status of populations (proportions of ill health, changes of disease pattern over time, age, geography etc.)
+1. Evaluation of interventions (preventive and therapeutic) and health problems
+1. Planning of health services, public policies and programs
+1. To study the working of health services, determination of needs and resources, proceed for analyses of services in action
+
+## What the epidemiologist determines
+1. Frequencies patterns of disease
+1. Aetiology/cause of disease
+1. Modes of transmission
+1. Factors of susceptibility, exposure and risk
+1. Environmental determinants
+
+## Activities in epidemiology
+1. Investigation and control of disease outbreaks
+1. Study of environmental and industrial hazards
+1. Evaluation of new preventive or curative clinical treatment and intervention
+1. Determination of the health needs of the populations
+1. Evaluation of the effectiveness of health services
+
+## Three essential components of epidemiology
+1. **Disease distribution** How are cases of the condition of interest spread across a population differently by gender, age, geographic location, socio-economic status, other features?
+1. **Disease determination** What risk factors or antecedent events are associated with the appearance of a disease or condition?
+1. **Disease frequency** How many cases of the condition occur over a given time period?
+
+## Epidemiological approaches
+1. **Descriptive epidemiology**
+    1. Type of disease or helath problem (What)
+    1. Person (Who)
+    1. Place (Where)
+    1. Time (When)
+1. **Analytical epidemiology**
+    - Evaluation of the determinants of disease distribution in terms of possible causal factors
+        1. Case control study
+        1. Cohort study
+1. **Experimental epidemiology**
+
+## Differences between epidemiology and clinical medicine
+
+<table>
+    <thead>
+        <tr>
+            <th>Subjects</th>
+            <th>Epidemiology</th>
+            <th>Clinical Medicine</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Unit of study</td>
+            <td>Defined populations or population at risk</td>
+            <td>Case or cases</td>
+        </tr>
+        <tr>
+            <td>Examination</td>
+            <td>Survey of particular community</td>
+            <td>Patients</td>
+        </tr>
+        <tr>
+            <td>Concerns with</td>
+            <td>Both sick and healthy people</td>
+            <td>Cases with the disease pattern</td>
+        </tr>
+        <tr>
+            <td>Diagnosis</td>
+            <td>People/community diagnosis by survey using questionnaire and special facilities for mass investigations</td>
+            <td>Patient diagnosis with the help of signs and symptoms, laboratory and radiological tests</td>
+        </tr>
+        <tr>
+            <td>Objectives</td>
+            <td>To identify particular source of infections, mode of transmission, aetiological factors and ways to control these problems and continuous follow-up; to explore the greatest potential for health improvement</td>
+            <td>To diagnose, prognosis and prescribe specific treatment for the diseases, to shorten morbidity and prevent mortality within the limited time</td>
+        </tr>
+        <tr>
+            <td>Relationship</td>
+            <td>Epidemiologist go to the community to find and solve health problems</td>
+            <td>Patients come to the doctor for treatment</td>
+        </tr>
+        <tr>
+            <td>Area of concern</td>
+            <td>Concerned with preventive and promotive measures through community health programs</td>
+            <td>Concerned with curative measures through treatment and rehabilitation</td>
+        </tr>
+        <tr>
+            <td>Concept</td>
+            <td>Biostatistical</td>
+            <td>Biomedical</td>
+        </tr>
+        <tr>
+            <td>Presentation of result</td>
+            <td>Symbolised in the form of tables and graphs</td>
+            <td>Symbolised as medical and laboratory reports</td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td>Sustainable and long process</td>
+            <td>Quick and short results</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Planning and implementation of health programs and health policy implications</td>
+            <td>Individual patient management for cure</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+export default ({children}) => <Layout>{children}</Layout>
