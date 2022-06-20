@@ -4,7 +4,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'display': ['Corinthia'],
+        'body': ['Roboto Slab']
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography')
