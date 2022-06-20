@@ -8,7 +8,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
         <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7319806090019161"
-          crossorigin="anonymous"></script>
+          crossOrigin="anonymous"></script>
       </Head>
       <body className='bg-slate-100 dark:bg-slate-800 font-body'>
         <Main />
