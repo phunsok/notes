@@ -1,0 +1,96 @@
+import Layout from 'components/layout'
+import Breadcrumb from 'components/breadcrumb'
+import Head from 'next/head'
+import Image from 'next/image'
+import profileImage from 'public/images/eating.jpeg'
+
+export const chapter_no = 1
+export const title = "Digestive System"
+export const hours = 5
+export const status = "progress"
+export const syllabus = "Skeleton: Definition, Basic functions, Types, Classification, Gross and microscopic anatomy, Joints: Definition, Types and function, Muscles: Definition, Functions, Gross and microscopic anatomy"
+export const image = profileImage
+
+<Head>
+    <meta name="description" content="functions, types, classification, gross and microscopic anatomy of bones; types and functions of joints" />
+    <title>{title}</title>
+</Head>
+
+<Breadcrumb title={title} />
+
+<Image src={profileImage} className="rounded-lg" />
+Photo by <a href="https://unsplash.com/@handywicaksono?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Handy Wicaksono</a> on <a href="https://unsplash.com/s/photos/eat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+<div>
+
+# {title}
+
+## Functions
+
+- processes food
+- extracts nutrients
+- eliminates residue
+
+## Five stages
+- ingestion
+- digestion
+- absroption
+- compaction (absorb water, consolidate undigested residue into faeces)
+- defaecation
+
+## Types of digestion
+- Mechanical digestion
+- Chemical digestion
+
+## General Histology
+- from inner to outer
+
+    ### 1. Mucosa
+    - lines the **lumen**
+    - consists of
+        - inner epithelium
+            - stratified squamous: oral cavity to oesophagus, lower anal canal
+            - simple columnar: stomach to large intestine
+        - **lamina propria** (loose connective tissue)
+        - thin layer of smooth muscle
+    - **mucosa-associated lynphatic tissue (MALT)**
+
+    ### 2. Submucosa
+    - loose connective tissue
+    - contains blood vessels, lymphatic vessels and nerves
+
+    ### 3. Muscularis externa
+    - smooth muscles in two layers, three in stomach
+    - inner circular layer, outer longitudinal layer
+    - responsible for motility
+
+    ### 4. Serosa
+    - from lower 3-4cm of oesophagus to just before rectum
+    - pharynx, most of oesophagus an oesophagus and rectum are covered by fibrous connective tissue - **adventitia** that blends into connective tissue of adjacent organs
+    - areolar tissue covered by simple squamous epithelium
+
+## Anatomy
+
+### 1. Digestive Tract
+- alimentary canal
+- about 5m long
+
+#### Mouth
+#### Pharynx
+#### Oesophagus
+#### Stomach
+#### Small intestine
+#### Large intestine
+
+### 2. Accessory Organs
+- Teeth
+- Tongue
+- Salivary glands
+- Liver
+- Gall bladder
+- Pancreas
+
+
+</div>
+
+export default ({children}) => <Layout>{children}</Layout>

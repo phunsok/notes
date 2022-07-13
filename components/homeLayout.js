@@ -7,7 +7,7 @@ const HomeLayout = ({ children }) => {
       <header className="border-b bg-slate-100 border-slate-500 dark:bg-slate-800">
         <div className="mx-auto max-w-3xl p-4 text-5xl font-thin tracking-wider text-center">
           <Link href="/">
-            <a className="text-slate- 700 dark:text-slate-100 no-underline font-display">Notes</a>
+            <a className="text-slate- 700 dark:text-slate-100 no-underline">Notes</a>
           </Link>
         </div>
       </header>
